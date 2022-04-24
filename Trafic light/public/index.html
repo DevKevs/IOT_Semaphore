@@ -5,19 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semáforo</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+   
     <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-    <div class="trafficlight">
-        <div class="protector"></div>
-        <div class="protector"></div>
-        <div class="protector"></div>
+   <div class="trafficlight">
         <div class="red" id="red"></div>
         <div class="yellow" id="yellow"></div>
         <div class="green" id="green"></div>
     </div>
-
+   
     <div class="counter-wrap">
         <div class="counter">
             <span id="counter-number" class="disable">00</span>
@@ -40,19 +37,13 @@
             <div class="button-smartphone"></div>
         </div>
     </div>
- 
-    <div class="table-wrap">
-        <table class="maintable table stripe dataTable"  id="maintable">
-            <thead>
-                <tr>
-                    <th>Pasos</th>
-                    <th>Ubicaion</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-    </div>
 
+    <div class="data-theme">
+        <div>
+                SEMÁFARO APP 
+        </div>
+    </div>
+    
     <div class="data-wrap">
         <div>
             TOTAL METRO: <span id="tm"></span>
@@ -62,8 +53,8 @@
         </div>
     </div>
 
+      
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
 
