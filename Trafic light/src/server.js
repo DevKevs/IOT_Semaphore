@@ -176,15 +176,7 @@ function semaphoreLogic() {
 function saveCrossing() {
   const crossing = Crossing.create({
     steps: "10",
-    location:
-      Math.floor(Math.random() * 255) +
-      1 +
-      "." +
-      Math.floor(Math.random() * 255) +
-      "." +
-      Math.floor(Math.random() * 255) +
-      "." +
-      Math.floor(Math.random() * 255),
+    location: "{lat: 2354.25, lgn: -5458.25}",
   }).then((d) =>{
     updateData()
   });

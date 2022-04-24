@@ -32,6 +32,7 @@
                 <div class="led-smartphone"></div>
             </div>
             <div class="screen-smartphone">
+                
                 <button class="push--skeuo" id="stopbtn"></button>
             </div>
             <div class="button-smartphone"></div>
@@ -40,18 +41,34 @@
 
     <div class="data-theme">
         <div>
-                SEMÁFARO APP 
+               <h6>SEMÁFARO APP</h6> 
+        </div>
+        <div class="message" style="margin-top: 150px;">
+            <h5 id="alert"></h5>
+            <h6>Solicitar cruce</h6>
         </div>
     </div>
     
-    <div class="data-wrap">
+    <div class="data-wrap">    
         <div>
-            TOTAL METRO: <span id="tm"></span>
+            Metros totales: <span id="tm"></span>
         </div>
         <div>
-            TOTAL PASOS: <span id="tp"></span>
+            Pasos totales: <span id="tp"></span>
         </div>
+       
     </div>
+    <section class="audio">
+        <audio id="Ayellow">
+            <source src="sounds/amarilla.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="Ared">
+            <source src="sounds/rojo.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="Agreen">
+            <source src="sounds/verde.mp3" type="audio/mpeg">
+        </audio>
+    </section>    
 
       
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

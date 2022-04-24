@@ -4,6 +4,10 @@ const yellow = document.getElementById("yellow")
 const green = document.getElementById("green")
 const counter = document.getElementById("counter-number")
 const stopbtn = document.getElementById("stopbtn")
+const alertMessage = document.getElementById("alert")
+const Ared = document.getElementById("Ared")
+const Agreen = document.getElementById("Agreen")
+const Ayellow = document.getElementById("Ayellow")
 
 const tm = document.getElementById("tm")
 const tp = document.getElementById("tp")
@@ -50,14 +54,24 @@ function changeLight(light) {
     switch(light) {
         case 'GREEN':
             green.classList.add("active");
+            alertMessage.innerHTML = "Luz verde, puede pasar!"
+            alertMessage.style.color = "green"
+            Agreen.play()
+            Ared.pause()
           break;
         case 'RED':
             red.classList.add("active");
+            alertMessage.innerHTML = "Luz roja, no cruzar!"
+            alertMessage.style.color = "red"
+            Ared.play()
             initCounter()
           break;
         case 'YELLOW':
             yellow.classList.add("active");
-
+            alertMessage.innerHTML = "Luz amarilla, espere..."
+            alertMessage.style.color = "yellow"
+            Ayellow.play()
+            Agreen.pause()
         break;
         default:
           // code block
